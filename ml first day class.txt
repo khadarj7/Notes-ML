@@ -1,0 +1,131 @@
+Machine Learning    Github Link:-https://github.com/adas754/
+two types 
+supervised and un serpervised 
+supervised where class listens to the professor 
+ML supervised Exaample-> iq cgpa placement -> Dependent coloumn / output column
+target is palcement and predicting and analysingt he data and make the machine learn on its own as it makes a smarter move for machine to learn as per data .
+
+Supervised machine learning ,ust have target output coloumn --------->
+                                                            1.e commerce during holi what types of time frame products can be sold 
+															
+Classifciation and regression
+1. classfication ----->>classify the data disecrete classfication 0 or 1 
+
+text                    review
+the class is good      positive 1
+worst                  negative 0 
+if in your output coloumn categoricla data/text data/discreet
+category is there then it will be classification
+
+
+
+Regression: House price predcition
+
+Location           Size   Price
+Blr(K.R pura)       3bhk  80000/-
+When we ahve numerical data in our output column that time 
+we will call that is part of regression.
+
+Based on the time and location that time we can mention it as regression.
+
+
+1.binary classification  
+if it has postive and negative response then it is binary classifciation.
+example:-gender classfication of students/Passenegers
+.
+2.multiple classification 
+if there is more than 2 class then it is called as multiple classfication
+example:-types of vegatables like tomato : Brocolli : raddish : Carrot .
+
+
+Regression Algorithm: Linear regression,Lassso.
+classfication-> Logistic Regression
+
+y=mx+c
+y=target/output /dependent 
+x=input 
+c=constant/Bias
+
+our Main Aim is to reduce the Error 
+if actrual model is 100% and real time is 70% true then actual -real time the diferernce of 30% is Error
+
+model perfomance must not be 0 thats the reason we use C  
+to resolve the issue we have to use optimal value M and c and in order to reduce the error we have to find the optimal Value of M & C 
+why exact is the erro using actual -real time =error  
+
+
+optimizer will genrate the optimal value of M & C .
+
+m= slope and C intercept /bias
+
+wnew=wold-alpha*deriavative of wold
+
+alpha->learnign rate 
+
+GD Optimizer helps to reach the glocbal minima and it will be optimal value of M & C .
+Error Function
+MSE - means square -penalising the error
+RMSE - (Root of MSE) 
+MAE
+evaluation metrics between regression and classification take image from website 
+
+orange Tool 
+ 
+ outliner -- any value above or below the lower liner points is known as outliner 
+ Nio multipolity-
+ normality of error shoulde be normal -nomarl distributed 
+ homoscedacity-data must be equally distributed
+Error Function
+MSE -means square -penalising the error------(actual -predicted) *2
+ 
+ 
+Confusion Matrix
+----------------------------------------------------
+Precesion TP/TP+FP                                 |
+                                                   |
+RECALL= TP/TP+FN                                   |
+                                                   |
+ACCURACY=TP+TN/TP+TN+FP+FN                         |
+                                                   |
+F1SCORE=2*PRE*RECALL/PRE+RECALL                    |
+___________________________________________________|
+
+True Positive 
+data is true  and prediction is true 
+
+false Negative
+data is false and prediction is false 
+
+True Negative
+Data is True and prediction is false 
+
+False Negative
+Data is false but prediction is true 
+
+this is confiusion matrix in simple words 
+
+why accuracy is importatnt 
+Ans:- lets understand with an example as the Manusfacturer is creating a product as per the client demand and in order to achivee the 
+expectation of the customer Accuracy is meant to be used in this scenarios 
+
+Formulas:
+TPR -True Positive Rate -------------->TPR=TP/TP+FN  
+FPR -False Positive Rate ------------->FPR=FP/FP+TN  
+
+ROC-Receiver Operating Characterstics
+It is primarly used to evaluate the perfomance of binary classsifcation models by plotitng the TPR against the 
+FPR at various thresholds level.
+
+[0,0.2,0.4,0.6,0.8]
+___________________________________
+YACT YPRED  Y(0)  Y(0.2)  Y(0.4)  |
+1     0.8     1      1      1     |
+0     0.9     1      1      1     |
+1     0.4     1      1      0     |
+1     0.3     1      1      0     |
+0     0.2     1      0      0     |
+1     0.7     1      1      1     |
+----------------------------------|
+THRESHOLD=0
+TPR=TP/TP+FN     4/4+0=1
+FPR=FP/FP+TN     2/2+0=1
